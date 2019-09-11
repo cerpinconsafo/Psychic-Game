@@ -1,0 +1,20 @@
+body {
+    background-color: #003366;
+}
+
+.container {
+    background-color: azure;
+}
+
+.jumbotron {
+    background-image: url('../images/cthun.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    color: #ffe926;
+    text-shadow: 1px 1px rgba(219, 0, 0, 0.452);
+}
+
+img {
+    margin-top: 10px;
+}

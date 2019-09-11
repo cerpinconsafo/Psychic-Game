@@ -19,6 +19,7 @@
  var losses = 0;
  var guessNum = 7;
  var usedLetters = [];
+ var cpuChoice
 
  alert("MORTAL BEING! Please strike any key to peer into my Mind's eye! MWUAHAHAHAHA!");
 
@@ -27,15 +28,25 @@
  var cpuChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
  console.log(cpuChoice);
 
+
+ //trying to see if this function stops anything other than letters from being logged
+
+ //document.onkeyup = function(event) {
+ // don't catch numbers, punctuation, enter, etc.
+ //    if (!(event.which <= 90 && event.which >= 65)) return
+ //}
+
+
  //when the user presses a key, run this function
  document.onkeyup = function(event) {
      var userGuess = event.key;
      if (userGuess === cpuChoice) {
-         wins++;
-         alert("IMPOSSIBLE! You saw that " + cpuChoice + " was the correct choice!");
-         alert("YOU WILL NOT BEST ME AGAIN, FOOL!")
-         guessNum = 7;
          usedLetters = [];
+         wins++;
+         alert("IMPOSSIBLE! How could you see that ' " + cpuChoice + " ' was the correct choice!?  PREPOSTEROUS!");
+         alert("YOU WILL NOT BEST ME AGAIN, FOOLISH MORTAL!")
+         guessNum = 7;
+
 
 
 
