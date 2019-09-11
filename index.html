@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="assets/javascript/game.js"></script>
     <title>Pyschic-Game Homework</title>
 </head>
 
@@ -27,7 +28,7 @@
                     <h3 class="font-weight-bold">Wins: </h3>
                     <div class="col">
                         <div class="winCount">
-                            <p class="font-weight-light">win count</p>
+                            <p class="font-weight-light" id="playerWins"></p>
                         </div>
                     </div>
                 </div>
@@ -41,7 +42,7 @@
                     <h3 class="font-weight-bold">Losses: </h3>
                     <div class="col">
                         <div class="lossCount">
-                            <p class="font-weight-light">loss count</p>
+                            <p class="font-weight-light" id="playerLosses"></p>
                         </div>
                     </div>
                 </div>
@@ -54,7 +55,7 @@
                     <h3 class="font-weight-bold">Number of Guesses Remaining: </h3>
                     <div class="col">
                         <div class="guessRemain">
-                            <p class="font-weight-light">guess remaining count</p>
+                            <p class="font-weight-light" id="playerGuesses"></p>
                         </div>
                     </div>
 
@@ -66,9 +67,10 @@
         <div class="letterGuess">
             <div class="row">
                 <div class="col">
-                    <h3 class="font-weight-bold">Number of Guesses Remaining: </h3>
+                    <h3 class="font-weight-bold">Letters Already Guessed: </h3>
                     <div class="col">
-                        <div class="guessLetter" <p class="font-weight-light">letter guesses</p>
+                        <div class="guessLetter">
+                            <p class="font-weight-light" id="wrongGuess"></p>
                         </div>
                     </div>
                 </div>
