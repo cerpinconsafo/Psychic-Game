@@ -13,7 +13,7 @@
 
 ## Deployed Page
 
-https://cerpinconsafo.github.io/Pyschic-Game/
+https://cerpinconsafo.github.io/Psychic-Game/
 
 ----
 
@@ -53,7 +53,7 @@ Option One: Psychic Game (Basic)
 
 ## Problems
 
-No noteworthy problems.
+My game reset function never worked.  I still need to go back to fix it.  
 
 ----
 
